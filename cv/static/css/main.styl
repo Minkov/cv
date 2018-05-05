@@ -1,0 +1,179 @@
+// +resets
+
+* 
+    margin: 0
+    padding: 0
+
+body 
+    font-size: 18px
+
+img 
+    max-width: 100%
+
+article 
+    width: 100%
+
+a 
+    color: black
+    text-decoration: none
+
+a:hover 
+    text-decoration: underline
+
+// -resets
+
+// +widgets
+
+.text-center
+    text-align: center
+
+    *
+        text-align: center
+.list
+    margin: 0
+    padding: 0
+    list-style-type: none
+
+    .list-item
+        margin: 0
+        padding: 0
+
+    &.list-horizontal
+        vertical-align: top
+
+        &>.list-item
+            vertical-align: top
+            display: inline-block
+    &.list-equal-5
+        &>.list-item
+            width: 32%
+
+            &.wide
+                width: 100%
+
+.icon
+    width: 40px
+    height: 40px
+    display: inline-block
+    background-color: black;
+
+    &.fb
+        background-image: url("/imgs/facebook.png")
+    &.leetcode
+        background-image: url("/imgs/leetcode.png")
+    &.github
+        background-image: url("/imgs/github.svg")
+// +widgets
+
+nav
+    background-color: #555555
+    text-align: center
+    font-size: 1.1em
+    
+    .list 
+        display: inline-block
+        font-size: 0
+
+        .list-item 
+            font-size: 1.3rem
+            border-left: 2px solid rgba(255, 255, 255, 0.7)
+            &:last-of-type 
+                border-right: 2px solid rgba(255, 255, 255, 0.7)
+    a
+        color: white
+        display: inline-block
+        margin: 0
+        padding: 10px 15px
+
+        &:hover 
+            background-color: rgba(255, 255, 255, 0.3)
+            text-decoration: none
+
+.content
+    width: 960px
+    max-width: 100%
+    margin: 0 auto
+    padding: 45px 0
+
+    h3
+    h4
+        margin-top: 10px
+    h1
+        font-size: 1.8em
+        text-align: center
+        margin-bottom: 45px
+    h2
+        font-size: 1.4em
+    h3
+        font-size: 1.2em
+    h4
+        font-size: 1.1em
+
+.intro
+    background-color: #ccc
+    display: table
+
+    .img-container
+    .info
+        display: table-cell
+
+    .img-container
+        width: 40%
+
+        img
+            border-radius: 5px
+            border: 1px solid black
+    
+    .info
+        vertical-align: top
+        position relative
+        height: 100%
+
+        padding-left: 45px
+
+        font-size: 1.5em
+
+        .list-item
+            line-height: 2em
+
+        a
+            text-decoration: underline
+
+    
+    .buttons
+        position: absolute
+        bottom: 0
+
+.work
+    h2
+    h3
+    h4
+        text-align: center
+        margin-top: 15px
+    
+    .list
+        width: 640px
+        max-width: 100%
+        margin: 0 auto
+
+        .list
+            list-style-type: disc
+
+        .list-item
+            line-height: 1.6em
+            margin-top: 25px
+
+            .list-item
+                margin-top: 0
+
+.tech
+    background-color: #eee
+
+    .list
+        &>.list-item
+            margin-top: 15px
+
+        .list
+            .list-item
+                margin: 0
+                line-height: 1.7em

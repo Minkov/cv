@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 18px;
+}
+img {
+  max-width: 100%;
+}
+article {
+  width: 100%;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.text-center {
+  text-align: center;
+}
+.text-center * {
+  text-align: center;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.list .list-item {
+  margin: 0;
+  padding: 0;
+}
+.list.list-horizontal {
+  vertical-align: top;
+}
+.list.list-horizontal>.list-item {
+  vertical-align: top;
+  display: inline-block;
+}
+.list.list-equal-5>.list-item {
+  width: 32%;
+}
+.list.list-equal-5>.list-item.wide {
+  width: 100%;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: #000;
+}
+.icon.fb {
+  background-image: url("/imgs/facebook.png");
+}
+.icon.leetcode {
+  background-image: url("/imgs/leetcode.png");
+}
+.icon.github {
+  background-image: url("/imgs/github.svg");
+}
+nav {
+  background-color: #555;
+  text-align: center;
+  font-size: 1.1em;
+}
+nav .list {
+  display: inline-block;
+  font-size: 0;
+}
+nav .list .list-item {
+  font-size: 1.3rem;
+  border-left: 2px solid rgba(255,255,255,0.7);
+}
+nav .list .list-item:last-of-type {
+  border-right: 2px solid rgba(255,255,255,0.7);
+}
+nav a {
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 15px;
+}
+nav a:hover {
+  background-color: rgba(255,255,255,0.3);
+  text-decoration: none;
+}
+.content {
+  width: 960px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 45px 0;
+}
+.content h3,
+.content h4 {
+  margin-top: 10px;
+}
+.content h1 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.content h2 {
+  font-size: 1.4em;
+}
+.content h3 {
+  font-size: 1.2em;
+}
+.content h4 {
+  font-size: 1.1em;
+}
+.intro {
+  background-color: #ccc;
+  display: table;
+}
+.intro .img-container,
+.intro .info {
+  display: table-cell;
+}
+.intro .img-container {
+  width: 40%;
+}
+.intro .img-container img {
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+.intro .info {
+  vertical-align: top;
+  position: relative;
+  height: 100%;
+  padding-left: 45px;
+  font-size: 1.5em;
+}
+.intro .info .list-item {
+  line-height: 2em;
+}
+.intro .info a {
+  text-decoration: underline;
+}
+.intro .buttons {
+  position: absolute;
+  bottom: 0;
+}
+.work h2,
+.work h3,
+.work h4 {
+  text-align: center;
+  margin-top: 15px;
+}
+.work .list {
+  width: 640px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.work .list .list {
+  list-style-type: disc;
+}
+.work .list .list-item {
+  line-height: 1.6em;
+  margin-top: 25px;
+}
+.work .list .list-item .list-item {
+  margin-top: 0;
+}
+.tech {
+  background-color: #eee;
+}
+.tech .list>.list-item {
+  margin-top: 15px;
+}
+.tech .list .list .list-item {
+  margin: 0;
+  line-height: 1.7em;
+}
