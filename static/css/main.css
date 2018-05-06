@@ -54,7 +54,7 @@ a:hover {
   background-size: 100%;
 }
 .icon.fb {
-  background-image: url("/imgs/facebook.png");
+  background-image: url("/imgs/facebook.svg");
 }
 .icon.leetcode {
   background-image: url("/imgs/leetcode.png");
@@ -63,7 +63,7 @@ a:hover {
   background-image: url("/imgs/github.svg");
 }
 .icon.linkedin {
-  background-image: url("/imgs/linkedin.png");
+  background-image: url("/imgs/linkedin.svg");
 }
 .half {
   display: inline-block;
