@@ -223,3 +223,41 @@ nav
             display inline-block
 
     
+@media only screen and (max-width: 768px)
+    .intro
+        display: block
+
+    .img-container
+    .info
+        display: inline-block
+
+        .buttons
+            bottom: -55px
+
+    .work
+        text-align: center
+
+        .list
+            list-style-type: none !important
+
+@media only screen and (max-width: 425px)
+    .intro
+        h1
+            text-align: center
+        .img-container
+        .info
+            display: block
+            width: 100%
+            text-align: center
+            padding: 0
+            
+            .buttons
+                margin-top: 40px;
+                position: static
+    nav
+        .list-item 
+            font-size: 1rem !important
+    .list.list-equal-5>.list-item
+        width: 48% !important
+        &.wide
+            width: 100% !important
