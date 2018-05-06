@@ -33,6 +33,15 @@ a:hover {
 .list .list-item {
   margin: 0;
   padding: 0;
+  line-height: 1.7em;
+}
+.list .list-item>.list {
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 45px;
+}
+.list .list-item>.list .list-item {
+  text-align: left;
 }
 .list.list-horizontal {
   vertical-align: top;
@@ -189,4 +198,20 @@ nav a:hover {
 }
 .education .list .list-item {
   vertical-align: top;
+}
+.achievements {
+  background-color: #f4f4f4;
+}
+.achievements .list {
+  width: 640px;
+  max-width: 100%;
+  display: inline-block;
+  text-align: left;
+}
+.achievements .list .list-item,
+.achievements .list p {
+  text-align: left;
+}
+.achievements .list .list {
+  display: inline-block;
 }
