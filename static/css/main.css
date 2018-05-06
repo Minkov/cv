@@ -61,10 +61,17 @@ a:hover {
 .icon.github {
   background-image: url("/imgs/github.svg");
 }
+.half {
+  display: inline-block;
+  width: 49%;
+}
 nav {
   background-color: #555;
   text-align: center;
   font-size: 1.1em;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 nav .list {
   display: inline-block;
@@ -92,6 +99,7 @@ nav a:hover {
   max-width: 100%;
   margin: 0 auto;
   padding: 45px 0;
+  padding-top: 80px;
 }
 .content h3,
 .content h4 {
@@ -125,6 +133,9 @@ nav a:hover {
 .intro .img-container img {
   border-radius: 5px;
   border: 1px solid #000;
+}
+.intro h1 {
+  text-align: left;
 }
 .intro .info {
   vertical-align: top;
@@ -173,4 +184,7 @@ nav a:hover {
 .tech .list .list .list-item {
   margin: 0;
   line-height: 1.7em;
+}
+.education .list .list-item {
+  vertical-align: top;
 }

@@ -63,12 +63,19 @@ a:hover
         background-image: url("/imgs/leetcode.png")
     &.github
         background-image: url("/imgs/github.svg")
+
+.half
+    display: inline-block
+    width: 49%
 // +widgets
 
 nav
     background-color: #555555
     text-align: center
     font-size: 1.1em
+    position: fixed
+    width: 100%
+    top: 0
     
     .list 
         display: inline-block
@@ -94,6 +101,7 @@ nav
     max-width: 100%
     margin: 0 auto
     padding: 45px 0
+    padding-top: 80px
 
     h3
     h4
@@ -124,6 +132,8 @@ nav
             border-radius: 5px
             border: 1px solid black
     
+    h1
+        text-align: left
     .info
         vertical-align: top
         position relative
@@ -177,3 +187,8 @@ nav
             .list-item
                 margin: 0
                 line-height: 1.7em
+
+.education
+    .list
+        .list-item
+            vertical-align: top
