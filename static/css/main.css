@@ -51,7 +51,7 @@ a:hover {
   width: 40px;
   height: 40px;
   display: inline-block;
-  background-color: #000;
+  background-size: 100%;
 }
 .icon.fb {
   background-image: url("/imgs/facebook.png");
@@ -62,15 +62,19 @@ a:hover {
 .icon.github {
   background-image: url("/imgs/github.svg");
 }
+.icon.linkedin {
+  background-image: url("/imgs/linkedin.png");
+}
 .half {
   display: inline-block;
   width: 49%;
 }
 nav {
-  background-color: rgba(132,2,2,0.9);
+  background-color: #840202;
   text-align: center;
   font-size: 1.1em;
   position: fixed;
+  z-index: 10000;
   width: 100%;
   top: 0;
 }
@@ -174,7 +178,7 @@ nav a:hover {
   margin-top: 0;
 }
 .tech {
-  background-color: #eee;
+  background-color: #f4f4f4;
 }
 .tech .list>.list-item {
   margin-top: 15px;
