@@ -6,7 +6,12 @@ body {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Oswald', sans-serif;
 }
 img {
@@ -18,7 +23,7 @@ article {
 }
 a {
   color: inherit;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 .text-center {
   text-align: center;
@@ -106,7 +111,7 @@ nav a {
   display: inline-block;
   margin: 0;
   padding: 10px 15px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 nav a:hover {
   background-color: rgba(255,255,255,0.3);
@@ -119,7 +124,6 @@ nav a:hover {
   padding: 45px 0;
   padding-top: 80px;
 }
-
 .content h1 {
   font-size: 2.6em;
   text-align: center;
@@ -147,7 +151,7 @@ nav a:hover {
   color: #bd2438;
 }
 .intro {
-  background-image: url(../imgs/background.jpg);
+  background-image: url("/imgs/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -187,7 +191,7 @@ nav a:hover {
   padding-top: 40px;
 }
 .intro a:hover {
-  color: #fff;
+  color: #bd2438;
 }
 .work h2,
 .work h3,
@@ -210,7 +214,6 @@ nav a:hover {
 .work .list .list-item .list-item {
   margin-top: 0;
 }
-
 .tech {
   background: #bd2438;
   color: #fff;
@@ -218,7 +221,6 @@ nav a:hover {
 .tech h1 {
   color: #fff;
 }
-
 .tech h2 {
   border-color: #d25c6c;
 }
@@ -229,12 +231,11 @@ nav a:hover {
   margin: 0;
   line-height: 1.7em;
 }
-
 .education .list .list-item {
   vertical-align: top;
 }
 .achievements {
-  background-image: url(../imgs/background.jpg);
+  background-image: url("../imgs/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -291,7 +292,7 @@ nav a:hover {
   .intro .info .buttons {
     margin-top: 40px;
     position: static;
-    padding-top: 40px;
+    padding-top: 40xp;
   }
   nav .list-item {
     font-size: 0.7rem !important;
