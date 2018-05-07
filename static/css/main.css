@@ -80,6 +80,10 @@ a {
 .icon.linkedin {
   background-image: url("/imgs/linkedin.svg");
 }
+.icon.www {
+  background-image: url("/imgs/www.jpeg");
+  border-radius: 5px;
+}
 .half {
   display: inline-block;
   width: 49%;
