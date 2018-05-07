@@ -4,20 +4,21 @@
 }
 body {
   font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
 }
 img {
+  width: 300px;
   max-width: 100%;
 }
 article {
   width: 100%;
 }
 a {
-  color: #840202;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
+  color: inherit;
+  transition: all .2s;
 }
 .text-center {
   text-align: center;
@@ -79,7 +80,7 @@ a:hover {
   width: 49%;
 }
 nav {
-  background-color: #840202;
+  background-color: #404040;
   text-align: center;
   font-size: 1.1em;
   position: fixed;
@@ -94,16 +95,18 @@ nav .list {
 }
 nav .list .list-item {
   font-size: 1.3rem;
-  border-left: 2px solid rgba(255,255,255,0.7);
+  border-left: 1px solid rgba(255,255,255,0.3);
 }
 nav .list .list-item:last-of-type {
-  border-right: 2px solid rgba(255,255,255,0.7);
+  border-right: 1px solid rgba(255,255,255,0.3);
 }
 nav a {
   color: #fff;
+  text-decoration: none;
   display: inline-block;
   margin: 0;
   padding: 10px 15px;
+  transition: all .2s;
 }
 nav a:hover {
   background-color: rgba(255,255,255,0.3);
@@ -113,29 +116,44 @@ nav a:hover {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 75px 20px;
+  padding: 45px 0;
+  padding-top: 80px;
 }
-.content h3,
-.content h4 {
-  margin-top: 10px;
-}
+
 .content h1 {
-  font-size: 1.8em;
+  font-size: 2.6em;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
+  color: #bd2438;
+  text-transform: uppercase;
 }
 .content h2 {
-  font-size: 1.4em;
+  font-size: 2.2em;
+  font-weight: normal;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  line-height: normal;
 }
 .content h3 {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-weight: normal;
 }
 .content h4 {
   font-size: 1.1em;
+  font-weight: normal;
+  opacity: 0.7;
+}
+.content a:hover {
+  color: #bd2438;
 }
 .intro {
-  background-color: #ccc;
+  background-image: url(../imgs/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   display: table;
+  color: #fff;
 }
 .intro .img-container,
 .intro .info {
@@ -145,11 +163,12 @@ nav a:hover {
   width: 40%;
 }
 .intro .img-container img {
-  border-radius: 5px;
-  border: 2px solid #840202;
+  border-radius: 50%;
 }
 .intro h1 {
   text-align: left;
+  color: #fff;
+  text-transform: none;
 }
 .intro .info {
   vertical-align: top;
@@ -159,11 +178,15 @@ nav a:hover {
   font-size: 1.5em;
 }
 .intro .info .list-item {
-  line-height: 2em;
+  line-height: 1.6em;
+  font-size: 0.8em;
 }
 .intro .buttons {
   position: absolute;
   bottom: 0;
+}
+.intro a:hover {
+  color: #fff;
 }
 .work h2,
 .work h3,
@@ -186,8 +209,17 @@ nav a:hover {
 .work .list .list-item .list-item {
   margin-top: 0;
 }
+
 .tech {
-  background-color: #f4f4f4;
+  background: #bd2438;
+  color: #fff;
+}
+.tech h1 {
+  color: #fff;
+}
+
+.tech h2 {
+  border-color: #d25c6c;
 }
 .tech .list>.list-item {
   margin-top: 15px;
@@ -196,15 +228,21 @@ nav a:hover {
   margin: 0;
   line-height: 1.7em;
 }
+
 .education .list .list-item {
   vertical-align: top;
 }
 .achievements {
-  background-color: #f4f4f4;
+  background-image: url(../imgs/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
 }
 .achievements .list {
-  width: 640px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 640px;
   display: inline-block;
   text-align: left;
 }
@@ -214,6 +252,9 @@ nav a:hover {
 }
 .achievements .list .list {
   display: inline-block;
+}
+.achievements h1 {
+  color: #fff;
 }
 @media only screen and (max-width: 768px) {
   .intro {
