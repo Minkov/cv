@@ -183,7 +183,8 @@ nav a:hover {
 }
 .intro .buttons {
   position: absolute;
-  bottom: 0;
+  bottom: -25px;
+  padding-top: 40px;
 }
 .intro a:hover {
   color: #fff;
@@ -290,6 +291,7 @@ nav a:hover {
   .intro .info .buttons {
     margin-top: 40px;
     position: static;
+    padding-top: 40px;
   }
   nav .list-item {
     font-size: 0.7rem !important;
