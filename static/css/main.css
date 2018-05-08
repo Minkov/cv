@@ -6,12 +6,7 @@ body {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
 }
 img {
@@ -23,7 +18,7 @@ article {
 }
 a {
   color: inherit;
-  transition: all 0.2s;
+  transition: all .2s;
 }
 .text-center {
   text-align: center;
@@ -69,20 +64,16 @@ a {
   background-size: 100%;
 }
 .icon.fb {
-  background-image: url("/imgs/facebook.svg");
+  background-image: url("../imgs/facebook.svg");
 }
 .icon.leetcode {
-  background-image: url("/imgs/leetcode.png");
+  background-image: url("../imgs/leetcode.png");
 }
 .icon.github {
-  background-image: url("/imgs/github.svg");
+  background-image: url("../imgs/github.svg");
 }
 .icon.linkedin {
-  background-image: url("/imgs/linkedin.svg");
-}
-.icon.www {
-  background-image: url("/imgs/www.jpeg");
-  border-radius: 5px;
+  background-image: url("../imgs/linkedin.svg");
 }
 .half {
   display: inline-block;
@@ -115,7 +106,7 @@ nav a {
   display: inline-block;
   margin: 0;
   padding: 10px 15px;
-  transition: all 0.2s;
+  transition: all .2s;
 }
 nav a:hover {
   background-color: rgba(255,255,255,0.3);
@@ -128,6 +119,7 @@ nav a:hover {
   padding: 45px 0;
   padding-top: 80px;
 }
+
 .content h1 {
   font-size: 2.6em;
   text-align: center;
@@ -155,7 +147,7 @@ nav a:hover {
   color: #bd2438;
 }
 .intro {
-  background-image: url("/imgs/background.jpg");
+  background-image: url(../imgs/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -191,11 +183,10 @@ nav a:hover {
 }
 .intro .buttons {
   position: absolute;
-  bottom: -25px;
-  padding-top: 40px;
+  bottom: 0;
 }
 .intro a:hover {
-  color: #bd2438;
+  color: #fff;
 }
 .work h2,
 .work h3,
@@ -218,6 +209,7 @@ nav a:hover {
 .work .list .list-item .list-item {
   margin-top: 0;
 }
+
 .tech {
   background: #bd2438;
   color: #fff;
@@ -225,6 +217,7 @@ nav a:hover {
 .tech h1 {
   color: #fff;
 }
+
 .tech h2 {
   border-color: #d25c6c;
 }
@@ -235,11 +228,12 @@ nav a:hover {
   margin: 0;
   line-height: 1.7em;
 }
+
 .education .list .list-item {
   vertical-align: top;
 }
 .achievements {
-  background-image: url("../imgs/background.jpg");
+  background-image: url(../imgs/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -263,13 +257,30 @@ nav a:hover {
   color: #fff;
 }
 @media only screen and (max-width: 768px) {
+  body {
+    font-size: 0.9em;
+  }
+  nav .list,
+  nav .list .list-item {
+    font-size: 1em;
+  }
   .intro {
     display: block;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .intro h1 {
+    font-size: 2em;
+    line-height: 1.2em;
   }
   .img-container,
   .info {
     display: inline-block;
   }
+  .intro .img-container {
+    width: 35%;
+  }
+
   .img-container .buttons,
   .info .buttons {
     bottom: -55px;
@@ -282,6 +293,10 @@ nav a:hover {
   }
 }
 @media only screen and (max-width: 425px) {
+  .content {
+    padding: 40px 10px;
+    box-sizing: border-box;
+  }
   .intro h1 {
     text-align: center;
   }
@@ -292,11 +307,18 @@ nav a:hover {
     text-align: center;
     padding: 0;
   }
+  .intro .info,
+  .intro .info .list-item {
+    font-size: 1em;
+  }
+  .intro .img-container {
+    max-width: 200px;
+    margin: 0 auto;
+  }
   .intro .img-container .buttons,
   .intro .info .buttons {
     margin-top: 40px;
     position: static;
-    padding-top: 40xp;
   }
   nav .list-item {
     font-size: 0.7rem !important;
@@ -305,12 +327,18 @@ nav a:hover {
     padding: 5px 10px;
   }
   .list.list-equal-5>.list-item {
-    width: 48% !important;
+    width: 100% !important;
   }
   .list.list-equal-5>.list-item.wide {
     width: 100% !important;
   }
   .achievements .list {
     max-width: 90%;
+  }
+  .list .list-item>.list {
+    box-sizing: border-box;
+  }
+  .half {
+    width: 100%;
   }
 }
