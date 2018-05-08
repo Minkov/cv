@@ -273,15 +273,28 @@ nav
         color: #fff
     
 @media only screen and (max-width: 768px)
+    body 
+        font-size: 0.9em;
+    nav .list,
+        .list 
+            .list-item
+                font-size: 1rem
+
     .intro
         display: block
+        padding: 0 20px
+        box-sizing: border-box
 
+        h1 
+            font-size: 2em
+            line-height: 1.2em
+
+        .img-container
+            width: 35%;
+        
     .img-container
     .info
         display: inline-block
-
-        .buttons
-            bottom: -55px
 
     .work
         text-align: center
@@ -290,6 +303,10 @@ nav
             list-style-type: none !important
 
 @media only screen and (max-width: 425px)
+	.content
+        padding: 40px 10px
+        box-sizing: border-box
+
     .intro
         h1
             text-align: center
@@ -299,21 +316,37 @@ nav
             width: 100%
             text-align: center
             padding: 0
-            
+            font-size: 1em
+
+            .img-container
+                max-width: 200px;
+                margin: 0 auto;
+
+            .list-item
+                font-size: 1em
             .buttons
-                margin-top: 40px;
+                margin-top: 0
                 position: static
-                padding-top: 40xp
     nav
         .list-item 
             font-size: 0.7rem !important
+
             a
                 padding: 5px 10px
+
     .list.list-equal-5>.list-item
-        width: 48% !important
+        width: 100% !important;
+    .tech .list.list-equal-5>.list-item
+        width: 47% !important
+
         &.wide
             width: 100% !important
+
+    .list .list-item>.list
+        box-sizing: border-box
 
     .achievements
         .list
             max-width: 90%
+    .half
+        width: 100%
