@@ -83,10 +83,21 @@ a
         background-image: url("/imgs/linkedin.svg")
     &.www
         background-image: url("/imgs/www.jpeg")
-        border-radius: 5px
+        border-radius: 3px
     &.hackerrank
         background-image: url("/imgs/hackerrank.jpg")
-        border-radius: 5px
+        border-radius: 3px
+
+    &:hover
+        &:after
+            content: ''
+            background-color: rgba(0, 0, 0, 0.5)
+            width: 40px
+            height: 40px
+            display: block
+            border-radius: 3px
+
+
 
 
 .half
@@ -206,6 +217,7 @@ nav
         color: #bd2438;
 
 .work
+    background: #fff
     h2
     h3
     h4
@@ -231,6 +243,11 @@ nav
 .tech
     background: #bd2438
     color: #fff
+
+    .content
+        a
+            &:hover
+                color: #000
 
     h1
         color: #fff

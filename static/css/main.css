@@ -82,11 +82,19 @@ a {
 }
 .icon.www {
   background-image: url("/imgs/www.jpeg");
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .icon.hackerrank {
   background-image: url("/imgs/hackerrank.jpg");
-  border-radius: 5px;
+  border-radius: 3px;
+}
+.icon:hover:after {
+  content: '';
+  background-color: rgba(0,0,0,0.5);
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 3px;
 }
 .half {
   display: inline-block;
@@ -201,6 +209,9 @@ nav a:hover {
 .intro a:hover {
   color: #bd2438;
 }
+.work {
+  background: #fff;
+}
 .work h2,
 .work h3,
 .work h4 {
@@ -225,6 +236,9 @@ nav a:hover {
 .tech {
   background: #bd2438;
   color: #fff;
+}
+.tech .content a:hover {
+  color: #000;
 }
 .tech h1 {
   color: #fff;
