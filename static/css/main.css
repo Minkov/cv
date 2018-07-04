@@ -31,6 +31,12 @@ a {
 .text-center * {
   text-align: center;
 }
+.text-left {
+  text-align: left;
+}
+.text-left * {
+  text-align: left;
+}
 .list {
   margin: 0;
   padding: 0;
@@ -48,6 +54,9 @@ a {
 }
 .list .list-item>.list .list-item {
   text-align: left;
+}
+.list.list-dots {
+  list-style-type: disc;
 }
 .list.list-horizontal {
   vertical-align: top;
@@ -252,6 +261,22 @@ nav a:hover {
 .tech .list .list .list-item {
   margin: 0;
   line-height: 1.7em;
+}
+.projects .list.list-horizontal>.list-item {
+  margin-top: 30px;
+  width: 45%;
+}
+.projects .list.list-horizontal>.list-item.wide {
+  width: 80%;
+}
+.projects .list.list-horizontal>.list-item:nth-of-type(even) {
+  padding-left: 10px;
+}
+.projects .list.list-horizontal>.list-item:nth-of-type(odd) {
+  padding-right: 10px;
+}
+.education {
+  background-color: #e7e7e7;
 }
 .education .list .list-item {
   vertical-align: top;

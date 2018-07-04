@@ -36,6 +36,11 @@ a
 
     *
         text-align: center
+
+.text-left
+    text-align: left
+    *
+        text-align: left 
 .list
     margin: 0
     padding: 0
@@ -53,6 +58,8 @@ a
             .list-item
                 text-align: left 
 
+    &.list-dots
+        list-style-type: disc
     &.list-horizontal
         vertical-align: top
 
@@ -264,7 +271,22 @@ nav
                 margin: 0
                 line-height: 1.7em
 
+.projects
+    .list.list-horizontal
+        &>.list-item
+            margin-top: 30px
+            width: 45%
+            &.wide
+                width: 80%
+
+            &:nth-of-type(even)
+                padding-left: 10px
+            &:nth-of-type(odd)
+                padding-right: 10px
+
 .education
+    background-color: #e7e7e7;
+
     .list
         .list-item
             vertical-align: top
@@ -293,6 +315,12 @@ nav
     h1
         color: #fff
     
+// @media only screen and (max-width: 1024px)
+//     .projects
+//         .list.list-horizontal
+//             &>.list-item
+//                 width: 100%
+
 @media only screen and (max-width: 768px)
     body 
         font-size: 0.9em;
