@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  cv:
+    build: .
+    image: cv
+    container_name: cv_instance
+    restart: on-failure
+    ports:
+      - "3001:80"
+    env_file:
+      - .env
