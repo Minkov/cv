@@ -3,7 +3,7 @@ version: '3.4'
 services:
   cv:
     build: .
-    image: cv
+    image: minkov/cv
     container_name: cv_instance
     restart: on-failure
     ports:
